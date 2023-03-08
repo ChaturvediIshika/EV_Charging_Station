@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>EV CHARGING STATION</h1>
+    <a href="/new">NEW</a>
+    <%for(let d of data){%>
+        <div>
+            <h2><%=d.name%></h2>
+            <img src="<%=d.image%>" alt="">
+            <h3>$<%=d.pricing%></h3>
+            <h3><%=d.address%></h3>
+            <a href="/<%=d.id%>"><button>SHOW</button></a>
+        </div>
+    <%}%>
+</body>
+</html>

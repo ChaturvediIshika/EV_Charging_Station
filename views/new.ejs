@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 500px;
+            padding: 16px;
+            margin: 30px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
+        }
+        h1{
+            text-align: center;
+        }
+        .form-control label{
+            display: block;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .form-control input,textarea{
+            display: block;
+            font-size: 1.2rem;
+            width: 80%;
+        }
+        .form-control button{
+            margin-top: 24px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="POST" >
+        <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" name="name">
+        </div>
+        <div class="form-control">
+            <label for="image">Image Url</label>
+            <input type="text" name="url" id="">
+        </div>
+        <div class="form-control">
+            <label for="price">Pricing</label>
+            <input type="range" name="price" id="">
+        </div>
+        <div class="form-control">
+            <label for="address">Address</label>
+            <input type="text" name="address">
+        </div>
+        <div class="form-control">
+            <button type="submit">SUBMIT</button>
+        </div>
+    </form>
+</body>
+</html>
