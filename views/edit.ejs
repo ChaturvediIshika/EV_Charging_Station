@@ -32,25 +32,26 @@
     </style>
 </head>
 <body>
-    <form action="/" method="POST" >
+    <h1>EDIT</h1>
+    <form action="/<%=data.id%>?_method=PATCH" method="POST" >
         <div class="form-control">
             <label for="name">Name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" value="<%=data.name%>">
         </div>
         <div class="form-control">
             <label for="image">Image Url</label>
-            <input type="text" name="url" id="">
+            <input type="text" name="url" id="" value="<%=data.image%>">
         </div>
         <div class="form-control">
             <label for="pricing">Pricing</label>
-            <input type="number" name="price" id="">
+            <input type="number" name="price" id="" value="<%=data.pricing%>">
         </div>
         <div class="form-control">
             <label for="address">Address</label>
-            <input type="text" name="address">
+            <input type="text" name="address" value="<%=data.address%>">
         </div>
         <div class="form-control">
-            <button type="submit">SUBMIT</button>
+            <button type="submit">Edit</button>
         </div>
     </form>
 </body>

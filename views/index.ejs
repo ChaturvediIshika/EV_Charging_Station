@@ -21,7 +21,9 @@
             <img src="<%=d.image%>" alt="">
             <h3>$<%=d.pricing%></h3>
             <h3><%=d.address%></h3>
-            <a href="/<%=d.id%>"><button>SHOW</button></a>
+            <a href="/show/<%=d.id%>"><button>SHOW</button></a>
+            <a href="/<%=d.id%>/edit"><button>EDIT</button></a>
+            <form action="/<%=d.id%>?_method=DELETE" method="POST"><button>DELETE</button></form>
         </div>
     <%}%>
 </body>
